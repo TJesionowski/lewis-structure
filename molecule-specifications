@@ -1,0 +1,23 @@
+I need a class which provides the following information:
+1)
+A list of atoms by atomic number
+
+2)
+A list of connections for each atom
+
+3)
+A list of the relative strengths for each atom?
+
+I want the following interface:
+
+int getSize();//returns the number of atoms
+
+float getAtoms(int atom);//returns the atomic number of the specified atom where atoms are in a range from 0-getSize() and ordered from the highest atomic number to the lowest atomic number.
+
+int getLinks(int atom);//returns the number of bonds the speciified atom forms
+
+int getLink(int atom, int link);//returns the index of the atom to which the specified bond is formed
+
+int getLinkMult(int atom, int link);//returns the multiplicity of the specified bond (ie: 1 for single bond, 2 for double bond, etc)
+
+I'll work on printing the diagram based on this interface.
